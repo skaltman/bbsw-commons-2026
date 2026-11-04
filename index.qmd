@@ -132,7 +132,7 @@ This is one of the core ideas behind a new open source package that we're excite
 
 ## {#commons-trusted-calculation}
 
-<video class="rounded click-to-toggle" width="100%" preload="auto" data-autoplay muted tabindex="0" aria-label="Commons recording: the agent searches for and runs the data scientist's site traffic calculation, and the answer is marked verified. Click to pause or resume.">
+<video class="rounded click-to-toggle" width="100%" preload="auto" data-autoplay muted tabindex="0" aria-label="Commons recording: the agent searches for and runs the data scientist's site traffic calculation, and the answer is marked Trusted. Click to pause or resume.">
   <source src="figures/commons-01-traffic-trend-a.mp4" type="video/mp4">
 </video>
 
@@ -142,7 +142,7 @@ Let's see it in action
 The first thing the agent does is search for a trusted calculation. Here it
 finds and runs a trusted site traffic calculation.
 
-The answer is marked as verified to signify that it used vetted code.
+The answer is marked Trusted to indicate that it used vetted code.
 :::
 
 ## {#commons-context-citations}
@@ -386,7 +386,7 @@ Improve: review its behavior and add calculations or context for recurring quest
 :::
 
 ::: notes
-The commons package ships as a skill for coding agents (Posit Assistant,
+The commons package ships with a skill for coding agents (Posit Assistant,
 Claude Code, Codex). 
 :::
 
@@ -534,7 +534,7 @@ present warehouse metadata and context as mutually exclusive categories.
 
 ```{r}
 #| eval: false
-#| code-line-numbers: "|9|"
+#| code-line-numbers: "|10|"
 commons <- commons(
   data_sources = data_source(trials = trials),
   semantic_layer = semantic_layer("R/measures.R"),
@@ -586,7 +586,7 @@ table- and column-level policies.
 ## Improve: analyze trajectories {#trajectory-review .paper-slide}
 
 ::: {.incremental}
-* `commons(log = TRUE)` records conversation histories with OpenTelemetry.
+* `agent(..., log = TRUE)` requests conversation-history capture with OpenTelemetry.
 * `trajectory_read()` reads trajectories from Connect or local traces.
 * `trajectory_review()` opens a Shiny app to browse, flag, and annotate conversations.
 :::
@@ -596,6 +596,11 @@ We'll demo the trajectory reviewer here. Reviewed conversations surface
 recurring questions, then you add trusted calculations or context. The goal
 is to improve the system, not just ask users to check answers more
 carefully. These reviewer functions are in the R package.
+
+Logging requires configured OpenTelemetry. On Connect, it requires version
+2026.09.0 or later, server and content opt-ins, and deployment of the
+`OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT` environment variable.
+Capture may require restarting the content after enabling observability.
 
 Go to trajectory reviewer 
 
