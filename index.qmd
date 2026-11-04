@@ -28,9 +28,9 @@ knitr:
 ::: {.talk-meta}
 **Simon Couch and Sara Altman**
 
-Posit Monthly Workflow Demos
+BBSW 2026 Day 0 Hands-on Vibe Coding Workshop
 
-October 28, 2026
+November 4, 2026
 :::
 :::
 :::
