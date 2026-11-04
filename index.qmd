@@ -549,10 +549,8 @@ agent <- agent(
 ```
 
 ::: {.incremental}
-* **Answers come only from trusted calculations:** measures, governed metrics, and exact trusted queries
+* Answers come only from trusted calculations
 * When no trusted calculation answers the question, the agent says so rather than writing its own SQL or R
-* The agent can still search context and inspect table schemas
-* No sandboxed R session and no provenance markers -- every answer is trusted by construction
 :::
 
 ::: notes
