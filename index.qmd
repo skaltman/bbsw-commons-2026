@@ -26,7 +26,7 @@ knitr:
 ### Trustworthy data agents with commons {.talk-title}
 
 ::: {.talk-meta}
-**Simon Couch and Sara Altman**
+**Sara Altman**
 
 BBSW 2026 Day 0 Hands-on Vibe Coding Workshop
 
@@ -40,7 +40,7 @@ November 4, 2026
 :::
 
 ::: {.footer .title-footer}
-https://simonpcouch.github.io/commons-demo/
+https://skaltman.github.io/bbsw-commons-2026/
 :::
 
 ## {#test-set .paper-slide}
@@ -590,9 +590,9 @@ we've learned from years of code for analysis that code is great for this
     <h1>Thank you!</h1>
   </div>
   <div class="thank-you-resources">
-<a class="thank-you-resource thank-you-link-card thank-you-slides-card" href="https://simonpcouch.github.io/commons-demo/">
+<a class="thank-you-resource thank-you-link-card thank-you-slides-card" href="https://skaltman.github.io/bbsw-commons-2026/">
       <span class="thank-you-resource-label">Slides</span>
-      <span class="thank-you-resource-link">simonpcouch.github.io/<wbr>commons-demo/</span>
+      <span class="thank-you-resource-link">skaltman.github.io/<wbr>bbsw-commons-2026/</span>
     </a>
     <a class="thank-you-resource thank-you-link-card thank-you-commons-card" href="https://pos.it/commons">
       <span class="thank-you-resource-label">Commons</span>
